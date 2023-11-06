@@ -35,18 +35,18 @@ To run the project with interactive console(`-it`) and CUDA passthrough(`--gpus 
 
 The arguments allow to customize the training process and experiment tracking. For more information about wandb arguments, see <a>https://lightning.ai/docs/pytorch/stable/api/lightning.pytorch.loggers.wandb.html</a>.
 
-| Options          | Description                             |
-|------------------|-----------------------------------------|
-| --checkpoint_dir | Directory to save checkpoints (Docker internal)|
-| --learning_rate  | Learning rate                           |
-| --warmup_steps   | Warmup steps                            |
-| --weight_decay   | Weight decay                            |
-| --epochs         | Max Epochs                              |
-| --disable_wandb  | Disable all tracking with Weight&Biases |
-| --wandb_entity   | Weight&Biases entity (username or team) |
-| --wandb_project  | Weight&Biases project name              |
-| --wandb_api_key  | Weight&Biases API key                   |
-| --wandb_log_model| Weight&Biases Log Model, defines how many checkpoints to log |
+| Options          | Description                             | Default Value                           |
+|------------------|-----------------------------------------|-----------------------------------------|
+| --checkpoint_dir | Directory to save checkpoints (Docker internal)| ./checkpoints                    |
+| --learning_rate  | Learning rate                           | 9e-5                                    |
+| --warmup_steps   | Warmup steps                            | 0                                       |
+| --weight_decay   | Weight decay                            | 1e-2                                    |
+| --epochs         | Max Epochs                              | 3                                       |
+| --disable_wandb  | Disable all tracking with Weight&Biases |                                         |
+| --wandb_entity   | Weight&Biases entity (username or team) |                                         |
+| --wandb_project  | Weight&Biases project name              | distilibert-finetune                    |
+| --wandb_api_key  | Weight&Biases API key                   |                                         |
+| --wandb_log_model| Weight&Biases Log Model, defines how many checkpoints to log | False              |
 
 
 
